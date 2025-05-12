@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Interativo</title>
+    <style>
+
+        *{
+
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+            
+        @media (max-width: 365px) {
+
+          body{
+
+                /* background-color: aqua; */
+                width: 100%;
+                /* height: 100vh; */
+                font-family: Arial, Helvetica, sans-serif;
+
+                #caixap{
+
+                    /* background-color: orangered ;/*tarde rgb(112, 30, 1) */
+                    /*background-color: rgb(187, 201, 0); dia rgb(89, 95, 0) */
+                    /*background-color: rgb(2, 0, 129); noite* rgb(1, 0, 65)*/
+                    width: 100%;
+                    height: 700px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    #caixa1{
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        #t1{
+
+                            color: rgb(252, 255, 255);
+                            font-size: 15px;
+                            
+
+                        }
+
+                        #caixa2{
+
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            #d2{
+
+                                width: 200px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+
+                                .g{
+
+                                    width: 180px;
+                                    height: 40px;
+                                    color: white;
+                                    border: 2px solid white;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    margin: 3px 0px 3px 0px;
+                                    border-radius: 10px;
+
+
+                                }
+
+                            }
+
+
+                            #d1{
+
+                                background-color: rgb(255, 255, 255);
+                                width: 260px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 50px 0px 50px 0px;
+                                border-radius: 50px;
+                                color:rgb(1, 0, 65);
+                                margin: 20px 0px 20px 0px;
+                                font-size: 12px;
+                                
+                                div{
+
+                                    border: solid 2px rgb(1, 0, 65);
+                                    width: 150px;
+                                    height: 150px;
+                                    background: url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg) aqua;
+                                    background-size: 100% 100% ;
+                                    border-radius: 50%;
+                                    margin: 20px;
+
+                                }
+
+                                h1{
+
+                                    color: rgb(1, 0, 65);
+                                    font-size: 30px;
+                            
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }  
+            
+        }
+            
+        @media (min-width: 364px) and (max-width: 560px) {
+
+            body{
+
+                /* background-color: aqua; */
+                width: 100%;
+                /* height: 100vh; */
+                font-family: Arial, Helvetica, sans-serif;
+
+                #caixap{
+
+                    /* background-color: orangered ;/*tarde rgb(112, 30, 1) */
+                    /*background-color: rgb(187, 201, 0); dia rgb(89, 95, 0) */
+                    /*background-color: rgb(2, 0, 129); noite* rgb(1, 0, 65)*/
+                    width: 100%;
+                    height: 700px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    #caixa1{
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        #t1{
+
+                            color: rgb(252, 255, 255);
+                            
+
+                        }
+
+                        #caixa2{
+
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            #d2{
+
+                                width: 200px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+
+                                .g{
+
+                                    width: 180px;
+                                    height: 40px;
+                                    color: white;
+                                    border: 2px solid white;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    margin: 3px 0px 3px 0px;
+                                    border-radius: 10px;
+
+
+                                }
+
+                            }
+
+
+                            #d1{
+
+                                background-color: rgb(255, 255, 255);
+                                width: 350px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 50px 0px 50px 0px;
+                                border-radius: 50px;
+                                color:rgb(1, 0, 65);
+                                margin: 20px 0px 20px 0px;
+                                font-size: 12px;
+                                
+                                div{
+
+                                    border: solid 2px rgb(1, 0, 65);
+                                    width: 200px;
+                                    height: 200px;
+                                    background: url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg) aqua;
+                                    background-size: 100% 100% ;
+                                    border-radius: 50%;
+                                    margin: 20px;
+
+                                }
+
+                                h1{
+
+                                    color: rgb(1, 0, 65);
+                                    font-size: 30px;
+                            
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+            
+        }
+
+        @media (min-width: 561px) and (max-width: 991px) {
+
+             body{
+
+                /* background-color: aqua; */
+                width: 100%;
+                /* height: 100vh; */
+                font-family: Arial, Helvetica, sans-serif;
+
+                #caixap{
+
+                    /* background-color: orangered ;/*tarde rgb(112, 30, 1) */
+                    /*background-color: rgb(187, 201, 0); dia rgb(89, 95, 0) */
+                    /*background-color: rgb(2, 0, 129); noite* rgb(1, 0, 65)*/
+                    width: 100%;
+                    height: 700px;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    #caixa1{
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 10px;
+                        margin-right: 10px;
+
+                        #t1{
+
+                            color: rgb(252, 255, 255);
+                            
+
+                        }
+
+                        #caixa2{
+
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            #d2{
+
+                                width: 200px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+
+                                .g{
+
+                                    width: 180px;
+                                    height: 40px;
+                                    color: white;
+                                    border: 2px solid white;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    margin: 3px 0px 3px 0px;
+                                    border-radius: 10px;
+
+
+                                }
+
+                            }
+
+
+                            #d1{
+
+                                background-color: rgb(255, 255, 255);
+                                width: 350px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 50px 0px 50px 0px;
+                                border-radius: 50px;
+                                color:rgb(1, 0, 65);
+                                margin: 20px 0px 20px 0px;
+                                font-size: 12px;
+                                
+                                div{
+
+                                    border: solid 2px rgb(1, 0, 65);
+                                    width: 200px;
+                                    height: 200px;
+                                    background: url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg) aqua;
+                                    background-size: 100% 100% ;
+                                    border-radius: 50%;
+                                    margin: 20px;
+
+                                }
+
+                                h1{
+
+                                    color: rgb(1, 0, 65);
+                                    font-size: 30px;
+                            
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+    
+        @media (min-width: 992px) {
+
+            body{
+
+                /* background-color: aqua; */
+                width: 100%;
+                height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+
+                #caixap{
+
+                    /* background-color: orangered ;/*tarde rgb(112, 30, 1) */
+                    /*background-color: rgb(187, 201, 0); dia rgb(89, 95, 0) */
+                    /*background-color: rgb(2, 0, 129); noite* rgb(1, 0, 65)*/
+                    width: 100%;
+                    height: 100vh;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+                    justify-content: center;
+
+                    #caixa1{
+
+                        display: flex;
+                        flex-flow: column nowrap;
+                        align-items: flex-start;
+                        justify-content: center;
+                        margin-left: 10px;
+
+                        #t1{
+
+                            color: rgb(252, 255, 255);
+                            margin-left: 27px;
+
+                        }
+
+                        #caixa2{
+
+                            display: flex;
+                            flex-flow: row wrap;
+                            align-items: center;
+                            justify-content: center;
+
+                            #d2{
+
+                                width: 200px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+
+                                .g{
+
+                                    width: 180px;
+                                    height: 40px;
+                                    color: white;
+                                    border: 2px solid white;
+                                    background-color: transparent;
+                                    text-align: center;
+                                    margin: 3px 0px 3px 0px;
+                                    border-radius: 10px;
+
+
+                                }
+
+                            }
+
+
+                            #d1{
+
+                                background-color: rgb(255, 255, 255);
+                                width: 350px;
+                                /* height: 50%; */
+                                display: flex;
+                                flex-flow: column nowrap;
+                                align-items: center;
+                                justify-content: center;
+                                padding: 50px 0px 50px 0px;
+                                border-radius: 50px;
+                                color:rgb(1, 0, 65);
+                                margin: 20px 0px 20px 0px;
+                                font-size: 12px;
+                                
+                                div{
+
+                                    border: solid 2px rgb(1, 0, 65);
+                                    width: 200px;
+                                    height: 200px;
+                                    background: url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg) aqua;
+                                    background-size: 100% 100% ;
+                                    border-radius: 50%;
+                                    margin: 20px;
+
+                                }
+
+                                h1{
+
+                                    color: rgb(1, 0, 65);
+                                    font-size: 30px;
+                            
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <section id="caixap">
+
+        <section id="caixa1">
+
+            <h1 id="t1">AS HORAS EXATAS SÃO</h1>
+
+            <section id="caixa2">
+
+                <div id="d1">
+                    
+                    <h2 id="t2">ESTÁ DE DIA, POR ISSO</h2>
+            
+                    <div id="caixaimg">
+            
+                        <!-- <img src="imgsparaexemplos/imgsguanabara1/4967804284498457049.jpg" alt=""> -->
+            
+                    </div>
+                    
+                    <h1 id="t3">BOM DIA!!</h1>
+            
+                </div>
+                <div id="d2">
+            
+                    <input type="time" id="time" class="g">
+                    <input type="button" value="VERIFICAR" id="botao" class="g">
+                    <input type="button" value="HÓRARIO NORMAL" id="vol" class="g" >
+                </div>
+
+            </section>
+
+        </section>
+
+    </section>
+
+    <script>
+
+        var t1 = document.getElementById('t1')
+        var t2 = document.getElementById('t2')
+        var t3 = document.getElementById('t3')
+        var caixap = document.getElementById('caixap');
+        var caixaimg = document.getElementById('caixaimg')
+        var agora = new Date();
+        var hora = agora.getHours();
+        var minutos = agora.getMinutes();
+        var segundos = agora.getSeconds(); 
+
+        if (hora < 12){
+
+            t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+            t2.innerHTML= `ESTÁ DE DIA, POR ISSO`
+            t2.style.color= 'rgb(89, 95, 0)'
+            t3.innerHTML= ` BOM DIA!!!`
+            t3.style.color= 'rgb(89, 95, 0)'
+            caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg)'
+            caixaimg.style.backgroundSize= '100% 100%'
+            caixaimg.style.border= '2px solid rgb(89, 95, 0)'
+            caixap.style.backgroundColor = 'rgb(187, 201, 0)';
+
+        }else if ( hora < 17){
+
+            t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+            t2.innerHTML= `ESTÁ DE TARDE, POR ISSO`
+            t2.style.color= 'rgb(112, 30, 1)'
+            t3.innerHTML= ` BOA TARDE!!!`
+            t3.style.color= 'rgb(112, 30, 1)'
+            caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457050.jpg)'
+            caixaimg.style.backgroundSize= '100% 100%'
+            caixaimg.style.border= '2px solid rgb(112, 30, 1)'
+            caixap.style.backgroundColor = 'orangered';
+
+        }else {
+
+            t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+            t2.innerHTML= `ESTÁ DE NOITE, POR ISSO`
+            t2.style.color= 'rgb(1, 0, 65)'
+            t3.innerHTML= ` BOA NOITE!!!`
+            t3.style.color= 'rgb(1, 0, 65)'
+            caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457049.jpg)'
+            caixaimg.style.backgroundSize= '100% 100%'
+            caixaimg.style.border= '2px solid rgb(1, 0, 65)'
+            caixap.style.backgroundColor = 'rgb(2, 0, 129)'
+
+
+        }
+
+        var verificar = document.getElementById('botao');
+
+        verificar.addEventListener('click', clicar);
+
+        function clicar() {
+            var entrada = document.getElementById('time');
+            var valor = entrada.value; // Ex: '14:30'
+
+            if (valor === "") {
+                alert("Digite uma hora válida!");
+                return;
+            }
+
+            var partes = valor.split(':'); // ['14', '30']
+            var h = Number(partes[0]);
+            var m = Number(partes[1]);
+
+            // Verificação manual de intervalo válido
+            if (m < 0 || m > 59) {
+                alert("Minutos inválidos! Digite um valor entre 00 e 59.");
+                return;
+            }
+
+            var horaDecimal = h + (m / 60);
+
+            if (horaDecimal < 12) {
+
+                t1.innerHTML= `AS HORAS EXATAS SÃO ${valor}`
+                t2.innerHTML= `ESTÁ DE DIA, POR ISSO`
+                t2.style.color= 'rgb(89, 95, 0)'
+                t3.innerHTML= ` BOM DIA!!!`
+                t3.style.color= 'rgb(89, 95, 0)'
+                caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg)'
+                caixaimg.style.backgroundSize= '100% 100%'
+                caixaimg.style.border= '2px solid rgb(89, 95, 0)'
+                caixap.style.backgroundColor = 'rgb(187, 201, 0)';
+
+            } else if (horaDecimal < 17) {
+
+                t1.innerHTML= `AS HORAS EXATAS SÃO ${valor}`
+                t2.innerHTML= `ESTÁ DE TARDE, POR ISSO`
+                t2.style.color= 'rgb(112, 30, 1)'
+                t3.innerHTML= ` BOA TARDE!!!`
+                t3.style.color= 'rgb(112, 30, 1)'
+                caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457050.jpg)'
+                caixaimg.style.backgroundSize= '100% 100%'
+                caixaimg.style.border= '2px solid rgb(112, 30, 1)'
+                caixap.style.backgroundColor = 'orangered';
+
+            } else {
+
+                t1.innerHTML= `AS HORAS EXATAS SÃO ${valor}`
+                t2.innerHTML= `ESTÁ DE NOITE, POR ISSO`
+                t2.style.color= 'rgb(1, 0, 65)'
+                t3.innerHTML= ` BOA NOITE!!!`
+                t3.style.color= 'rgb(1, 0, 65)'
+                caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457049.jpg)'
+                caixaimg.style.backgroundSize= '100% 100%'
+                caixaimg.style.border= '2px solid rgb(1, 0, 65)'
+                caixap.style.backgroundColor = 'rgb(2, 0, 129)'
+            
+            }
+        
+        } 
+
+            var voltar = document.getElementById('vol')
+            voltar.addEventListener('click', function () {
+
+               if (hora < 12){
+
+                    t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+                    t2.innerHTML= `ESTÁ DE DIA, POR ISSO`
+                    t2.style.color= 'rgb(89, 95, 0)'
+                    t3.innerHTML= ` BOM DIA!!!`
+                    t3.style.color= 'rgb(89, 95, 0)'
+                    caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457051.jpg)'
+                    caixaimg.style.backgroundSize= '100% 100%'
+                    caixaimg.style.border= '2px solid rgb(89, 95, 0)'
+                    caixap.style.backgroundColor = 'rgb(187, 201, 0)';
+
+                }else if ( hora < 17){
+
+                    t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+                    t2.innerHTML= `ESTÁ DE TARDE, POR ISSO`
+                    t2.style.color= 'rgb(112, 30, 1)'
+                    t3.innerHTML= ` BOA TARDE!!!`
+                    t3.style.color= 'rgb(112, 30, 1)'
+                    caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457050.jpg)'
+                    caixaimg.style.backgroundSize= '100% 100%'
+                    caixaimg.style.border= '2px solid rgb(112, 30, 1)'
+                    caixap.style.backgroundColor = 'orangered';
+
+                }else {
+
+                    t1.innerHTML= `AS HORAS EXATAS SÃO ${hora}:${minutos}:${segundos}`
+                    t2.innerHTML= `ESTÁ DE NOITE, POR ISSO`
+                    t2.style.color= 'rgb(1, 0, 65)'
+                    t3.innerHTML= ` BOA NOITE!!!`
+                    t3.style.color= 'rgb(1, 0, 65)'
+                    caixaimg.style.background=' url(imgsparaexemplos/imgsguanabara1/4967804284498457049.jpg)'
+                    caixaimg.style.backgroundSize= '100% 100%'
+                    caixaimg.style.border= '2px solid rgb(1, 0, 65)'
+                    caixap.style.backgroundColor = 'rgb(2, 0, 129)'
+
+
+                } 
+
+            })
+
+    </script>
+</body>
+</html>
